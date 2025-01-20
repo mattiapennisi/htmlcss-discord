@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     color: var(--font-primary);
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Debug */
@@ -29,122 +30,6 @@ body {
     * {
         border: 1px dotted black;
     }
-/* 
-    header {
-        height: 50px;
-    }
-
-    #h-container {
-        height: 30px;
-        font-size: 0.7rem;
-    }
-
-    #h-logo {
-        padding: 3px;
-    }
-
-    #navbar {
-        .nav-link {
-            margin: 3px;
-        }
-    }
-
-    #h-login {
-        padding: 3px;
-    }
-
-    .section-content {
-        height: 280px;
-    }
-
-    #jumbotron {
-        background-color: var(--jumbotron-bg);
-        height: 350px;
-
-        #jumbotron-content {
-            height: 280px;
-            background-color: var(--sections-primary);
-        }
-    }
-
-    #invite-only {
-        background-color: var(--invite-only-bg);
-        height: 350px;
-
-        #invite-only-content {}
-    }
-
-    #community {
-        background-color: var(--community-bg);
-        height: 350px;
-
-        #community-content {
-            flex-direction: row-reverse;
-        }
-    }
-
-    #fandom {
-        background-color: var(--fandom-bg);
-        height: 350px;
-
-        #fandom-content {}
-    }
-
-    #technology {
-        background-color: var(--technology-bg);
-        height: 600px;
-
-        #technology-content {
-            height: 550px;
-            background-color: var(--sections-secondary);
-        }
-    }
-
-    .big-content {
-        background-color: var(--sections-big);
-    }
-
-    .small-content {
-        background-color: var(--sections-small);
-    }
-
-    footer {
-        background-color: var(--footer-bg);
-        height: 470px;
-
-        #footer-nav {
-            height: 400px;
-            padding-bottom: 10px;
-
-            #footer-aside {
-                background-color: var(--footer-aside);
-                height: 370px;
-                width: 20%;
-            }
-
-            #footer-columns {
-                background-color: var(--footer-columns);
-                height: 370px;
-            }
-        }
-
-        #footer-signup {
-
-            height: 70px;
-            border-top: 2px solid var(--technology-bg);
-
-            #footer-signup-container {
-                height: 45px;
-                background-color: var(--footer-signup);
-            }
-        }
-    }
-
-    .btn-footer {
-        background-color: var(--footer-buttons);
-        height: 20px;
-        font-size: 0.8rem;
-    } */
 }
 
 /* Header */
@@ -155,7 +40,7 @@ header {
 #h-container {
     height: 30px;
     font-size: 0.8rem;
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -176,10 +61,9 @@ header {
 #navbar {
     width: 60%;
     flex-direction: row;
-    font-weight: 700;
 
     .nav-link {
-        
+
         color: #fff;
         text-decoration: none;
         margin: 15px;
@@ -224,9 +108,8 @@ header {
 }
 
 .section-title {
-    font-family: 'Whitney Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: 1000;
+    font-size: 2.3rem;
+    font-weight: 700;
     line-height: 1.2;
     text-align: left;
     width: 70%;
@@ -235,9 +118,9 @@ header {
 
 .section-text {
     font-size: 1rem;
-    font-weight: 700;
     width: 70%;
-    line-height: 1.5;
+    line-height: 1.2;
+    text-align: left;
 }
 
 .margin-section {
@@ -265,15 +148,15 @@ header {
             margin: 50px 10px 10px 10px;
             font-family: 'Whitney Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 3rem;
-            font-weight: 1000;
+            font-weight: 700;
         }
 
         #jumbotron-text {
             color: #fff;
             margin: 30px 0;
-            font-weight: 700;
             line-height: 1.8;
             text-align: center;
+            width: 95%;
         }
 
         .btns-layout {
@@ -282,12 +165,13 @@ header {
     }
 }
 
+/* General purpose utility classes */
 .jumbotron-btn {
     border-radius: 30px;
     border: 0px;
     padding: 12px 20px;
-    margin:  0px 15px 10px 15px;
-    font-weight: 500;
+    margin: 0px 15px 10px 15px;
+    font-weight: 700;
 }
 
 .btn-pressed {
@@ -299,8 +183,8 @@ header {
     border-radius: 30px;
     border: 0px;
     padding: 12px 20px;
-    margin:  0px 15px 10px 15px;
-    font-weight: 500;
+    margin: 0px 15px 10px 15px;
+    font-weight: 700;
     color: #fff;
     background-color: var(--cta-btn);
 }
@@ -348,11 +232,12 @@ header {
     #tech-title {
         width: 90%;
         text-align: center;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     #tech-text {
         width: 90%;
+        text-align: center;
     }
 
     #technology-content {
@@ -361,7 +246,7 @@ header {
         align-items: center;
         width: 70%;
         font-size: 1.5rem;
-        
+
         #technology-img-cont {
             width: 100%;
         }
@@ -373,6 +258,7 @@ header {
             padding: 40px;
             font-size: 1.7rem;
             text-align: center;
+            width: 45%;
         }
     }
 }
@@ -397,15 +283,14 @@ header {
 }
 
 /* Footer */
-footer { 
-    font-family: 'Whitney Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+footer {
     background-color: var(--footer-bg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    font-weight: 1000;
+    font-weight: 500;
 
     #footer-nav {
         display: flex;
@@ -458,6 +343,7 @@ footer {
 
             .footer-col-head {
                 color: var(--footer-primary);
+                font-weight: 700;
             }
         }
     }
@@ -469,7 +355,7 @@ footer {
         justify-content: space-between;
         border-top: 1px solid var(--footer-primary);
         padding: 20px 0 90px 0;
-        
+
         #btn-footer {
             border-radius: 30px;
             border: 0px;

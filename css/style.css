@@ -288,7 +288,7 @@ header {
 
 /* Normal sections */
 #invite-only {
-    background-image: url();
+    background-color: var(--invite-only-bg);
 
     #invite-only-content {
 
@@ -301,28 +301,42 @@ header {
 }
 
 #community {
-    background-color: ;
-    height: px;
+    background-color: var(--community-bg);
 
     #community-content {
         flex-direction: row-reverse;
+
+        #community-bg {
+            background-image: url(../img/item2.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }
 
 #fandom {
-    background-color: ;
-    height: px;
+    background-color: var(--fandom-bg);
 
-    #fandom-content {}
+    #fandom-content {
+
+        #fandom-bg {
+            background-image: url(../img/item3.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 #technology {
-    background-color: ;
-    height: px;
+    background-color: var(--technology-bg);
 
     #technology-content {
-        height: px;
-        background-color: ;
+        
+        #technology-bg {
+            background-image: url(../img/item4.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }
 
@@ -338,18 +352,6 @@ header {
     background-color: ;
     width: 30%;
     height: 100%;
-}
-
-#community {
-    background-image: url(../img/item2.svg);
-}
-
-#fandom {
-    background-image: url(../img/item3.svg);
-}
-
-#technology {
-    background-image: url(../img/item4.svg);
 }
 
 /* Footer */

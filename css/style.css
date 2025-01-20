@@ -1,5 +1,8 @@
 :root {
-    font-family: font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Whitney Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Whitney Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Whitney Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --header-bg: #255ee9;
     --h-container-bg: #daa520;
     --jumbotron-bg: #00008b;
@@ -17,6 +20,9 @@
     --footer-signup: #7fffd4;
     --footer-buttons: #e4a3ac;
 }
+
+/* Import Whitney font family */
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
 
 body {
     display: flex;
@@ -154,11 +160,12 @@ header {
 
 #h-container {
     height: 30px;
-    font-size: 0.7rem;
-    width: 60%;
+    font-size: 0.8rem;
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-items: center;
     margin: 7px;
 }
 
@@ -174,12 +181,13 @@ header {
 #navbar {
     width: 60%;
     flex-direction: row;
+    font-weight: 700;
 
     .nav-link {
         
         color: #fff;
         text-decoration: none;
-        margin: 3px;
+        margin: 15px;
     }
 }
 
@@ -190,6 +198,7 @@ header {
     #btn-login {
         border-radius: 30px;
         border: 0px;
+        padding: 8px 15px;
     }
 }
 
@@ -274,15 +283,32 @@ header {
 
 /* Content utility classes */
 .big-content {
-    background-color: ;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 70%;
-    height: 100%;
+    height: ;
 }
 
 .small-content {
     background-color: ;
     width: 30%;
     height: 100%;
+}
+
+#invite-only-content {
+    background-image: url(../img/item1.svg);
+}
+
+#community {
+    background-image: url(../img/item2.svg);
+}
+
+#fandom {
+    background-image: url(../img/item3.svg);
+}
+
+#technology {
+    background-image: url(../img/item4.svg);
 }
 
 /* Footer */

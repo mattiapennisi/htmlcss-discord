@@ -271,7 +271,7 @@ header {
         }
 
         .btns-layout {
-
+            width: auto;
         }
     }
 }
@@ -393,7 +393,8 @@ header {
 }
 
 /* Footer */
-footer {
+footer { 
+    font-family: 'Whitney Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: var(--footer-bg);
     display: flex;
     flex-direction: column;
@@ -405,14 +406,34 @@ footer {
     #footer-nav {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 70%;
-        padding: 30px;
+        padding: 50px 0;
 
         #footer-aside {
             align-self: start;
             width: 38%;
+            display: flex;
+            flex-direction: column;
+
+            #lang {
+                display: flex;
+
+                #lang-flag {
+                    width: 30px;
+                    margin-right: 5px;
+                }
+            }
+
+            #social-links {
+                display: flex;
+
+                img {
+                    width: 20px;
+                    margin: 10px 10px 0 0;
+                }
+            }
         }
 
         #footer-columns {
@@ -435,26 +456,26 @@ footer {
     #footer-signup {
 
         width: 70%;
-        height: px;
         display: flex;
+        justify-content: space-between;
         border-top: 2px solid var(--footer-primary);
-
-        #footer-signup-container {
-            height: px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        padding: 20px 0;
+        
+        #btn-footer {
+            border-radius: 30px;
+            border: 0px;
+            padding: 3px 10px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #fff;
+            background-color: var(--cta-btn);
         }
     }
 }
 
 .footer-title {
-    font-family: 'Whitney Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1.7rem;
     font-weight: 1000;
-}
-
-.btn-footer {
-    display: flex;
-    align-items: center;
+    color: var(--footer-primary);
+    margin: 0 0 15px 0;
 }

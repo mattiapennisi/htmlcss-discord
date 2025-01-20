@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
                 </p>
                 <div class="flex-center">
                     <button class="jumbotron-btn">
-                        &#8595; Scarica per Mac
+                        &#8595;  Scarica per Mac
                     </button>
                     <button class="jumbotron-btn btn-pressed">
                         Apri Discord nel tuo browser
@@ -62,7 +62,7 @@
                 <div class="big-content margin-section">
                     <img class="w-section-img" src="img/item1.svg" alt="Discord theme channels">
                 </div>
-                <div class="small-content margin-section">
+                <div class="small-content margin-section f-col-end">
                     <h2 class="section-title">Un luogo a invito con tutto lo spazio necessario per parlare</h2>
                     <p class="section-text">
                         I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o
@@ -80,7 +80,7 @@
                 <div class="big-content margin-section">
                     <img class="w-section-img" src="img/item2.svg" alt="Discord vocal channels">
                 </div>
-                <div class="small-content margin-section">
+                <div id="community-text" class="small-content margin-section">
                     <h2 class="section-title">Dove trovarsi è facile</h2>
                     <p class="section-text">
                         Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che
@@ -96,9 +96,9 @@
         <section id="fandom" class="flex-center">
             <div id="fandom-content" class="section-content">
                 <div class="big-content margin-section">
-                    <img class="w-section-img" src="img/item3.svg" alt="Discord channels">
+                    <img class="w-section-img" src="img/item3.svg" alt="Discord communities">
                 </div>
-                <div class="small-content margin-section">
+                <div class="small-content margin-section f-col-end">
                     <h2 class="section-title">Da pochi a un fandom</h2>
                     <p class="section-text">
                         Dai inizio a una community di qualsiasi dimensione con strumenti di moderazione e accesso ai
@@ -113,10 +113,10 @@
         <!-- Technology section -->
         <section id="technology" class="flex-center">
             <div id="technology-content" class="section-content margin-section flex-center">
-                <h2 class="section-title">Tecnologia affidabile per tenersi in contatto</h2>
-                <p class="section-text">Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
-                <div class="big-content margin-section">
-                    <img class="w-section-img" src="img/item4-big.svg" alt="Discord channels">
+                <h2 id="tech-title" class="section-title">Tecnologia affidabile per tenersi in contatto</h2>
+                <p id="tech-text" class="section-text">Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
+                <div id="technology-img-cont" class="big-content">
+                    <img id="technology-image" class="w-section-img" src="img/item4-big.svg" alt="Discord videocall">
                 </div>
                 <h2 id="technology-cta" class="section-title">Pronto a iniziare la tua avventura?</h2>
                 <button class="cta-btn">
@@ -137,14 +137,6 @@
                 <div id="lang">
                     <img id="lang-flag" src="img/ita.png" alt="Language flag">
                     <div>Italiano &#x25BC;</div>
-                    <!-- <form action="">
-                        <input type="radio" name="lang-choice" id="lang-choice">
-                        <option value="ita">Italiano</option>
-                        <option value="eng">English</option>
-                        <option value="deu">Deutsch</option>
-                        <option value="esp">Espanol</option>
-                        <option value="fra">Francais</option>
-                    </form> -->
 
                 </div>
                 <div id="social-links">
@@ -207,7 +199,7 @@
         <!-- Logo and signup of footer section -->
         <div id="footer-signup">
                 <div>
-                    <img src="img/logo.svg" alt="Discord logo" height="30px">
+                    <img src="img/logo.svg" alt="Discord logo" height="30">
                 </div>
                 <button id="btn-footer">
                     Registrati

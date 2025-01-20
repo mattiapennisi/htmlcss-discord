@@ -397,9 +397,10 @@ footer {
     background-color: var(--footer-bg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: #fff;
+    font-weight: 1000;
 
     #footer-nav {
         display: flex;
@@ -410,6 +411,7 @@ footer {
         padding: 30px;
 
         #footer-aside {
+            align-self: start;
             width: 38%;
         }
 
@@ -417,10 +419,15 @@ footer {
             width: 62%;
             display: flex;
             flex-direction: row;
+            line-height: 1.7;
 
             .nav-column {
                 width: 25%;
                 font-size: 0.7rem;
+            }
+
+            .footer-col-head {
+                color: var(--footer-primary);
             }
         }
     }

@@ -1,0 +1,325 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --header-bg: #3161e0;
+    --h-container-bg: #daa520;
+    --jumbotron-bg: #00008b;
+    --invite-only-bg: #fff;
+    --community-bg: #d3d3d3;
+    --fandom-bg: #fff;
+    --technology-bg: #d3d3d3;
+    --sections-primary: #ee82ee;
+    --sections-big: #1e90ff;
+    --sections-small: #ffc0cb;
+    --sections-secondary: #228b22;
+    --footer-bg: #23272a;
+    --footer-aside: #f08080;
+    --footer-columns: #20b2aa;
+    --footer-signup: #7fffd4;
+    --footer-buttons: #e4a3ac;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Debug */
+.debug {
+
+    * {
+        /* border: 1px dotted black; */
+    }
+
+    header {
+        height: 50px;
+    }
+
+    #h-container {
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    #h-logo {
+        padding: 3px;
+    }
+
+    #navbar {
+        .nav-link {
+            margin: 3px;
+        }
+    }
+
+    #h-login {
+        padding: 3px;
+    }
+
+    .section-content {
+        height: 280px;
+    }
+
+    #jumbotron {
+        background-color: var(--jumbotron-bg);
+        height: 350px;
+
+        #jumbotron-content {
+            height: 280px;
+            background-color: var(--sections-primary);
+        }
+    }
+
+    #invite-only {
+        background-color: var(--invite-only-bg);
+        height: 350px;
+
+        #invite-only-content {}
+    }
+
+    #community {
+        background-color: var(--community-bg);
+        height: 350px;
+
+        #community-content {
+            flex-direction: row-reverse;
+        }
+    }
+
+    #fandom {
+        background-color: var(--fandom-bg);
+        height: 350px;
+
+        #fandom-content {}
+    }
+
+    #technology {
+        background-color: var(--technology-bg);
+        height: 600px;
+
+        #technology-content {
+            height: 550px;
+            background-color: var(--sections-secondary);
+        }
+    }
+
+    .big-content {
+        background-color: var(--sections-big);
+    }
+
+    .small-content {
+        background-color: var(--sections-small);
+    }
+
+    footer {
+        background-color: var(--footer-bg);
+        height: 470px;
+
+        #footer-nav {
+            height: 400px;
+            padding-bottom: 10px;
+
+            #footer-aside {
+                background-color: var(--footer-aside);
+                height: 370px;
+                width: 20%;
+            }
+
+            #footer-columns {
+                background-color: var(--footer-columns);
+                height: 370px;
+            }
+        }
+
+        #footer-signup {
+
+            height: 70px;
+            border-top: 2px solid var(--technology-bg);
+
+            #footer-signup-container {
+                height: 45px;
+                background-color: var(--footer-signup);
+            }
+        }
+    }
+
+    .btn-footer {
+        background-color: var(--footer-buttons);
+        height: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg);
+    height: ;
+}
+
+#h-container {
+    background-color: ;
+    height: px;
+    font-size: rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+#h-logo {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: px;
+}
+
+#navbar {
+    width: 60%;
+    flex-direction: row;
+
+    .nav-link {
+        
+        color: #fff;
+        text-decoration: none;
+        margin: px;
+    }
+}
+
+#h-login {
+    width: 20%;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: 0px;
+}
+
+/* Flex center utility class */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section utility class */
+.section-content {
+    height: px;
+    width: 60%;
+    display: flex;
+}
+
+/* Sections in main */
+#jumbotron {
+    background-color: ;
+    height: px;
+
+    #jumbotron-content {
+        height: px;
+        width: 45%;
+        background-color: ;
+    }
+}
+
+#invite-only {
+    background-color: ;
+    height: px;
+
+    #invite-only-content {}
+}
+
+#community {
+    background-color: ;
+    height: px;
+
+    #community-content {
+        flex-direction: row-reverse;
+    }
+}
+
+#fandom {
+    background-color: ;
+    height: px;
+
+    #fandom-content {}
+}
+
+#technology {
+    background-color: ;
+    height: px;
+
+    #technology-content {
+        height: 550px;
+        background-color: var(--sections-secondary);
+    }
+}
+
+/* Content utility classes */
+.big-content {
+    background-color: ;
+    width: 70%;
+    height: 100%;
+}
+
+.small-content {
+    background-color: ;
+    width: 30%;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: ;
+    height: px;
+    display: flex;
+    flex-direction: column;
+
+    #footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: px;
+        padding-bottom: px;
+
+        #footer-aside {
+            background-color: ;
+            height: px;
+            width: 20%;
+        }
+
+        #footer-columns {
+            background-color: ;
+            height: px;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+
+            .nav-column {
+                width: 25%;
+            }
+        }
+    }
+
+    #footer-signup {
+
+        height: px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        border-top: 2px solid var(--technology-bg);
+
+        #footer-signup-container {
+            width: 60%;
+            height: px;
+            display: flex;
+            justify-content: space-between;
+            background-color: ;
+            align-items: center;
+        }
+    }
+}
+
+.btn-footer {
+    background-color: ;
+    display: flex;
+    align-items: center;
+    height: px;
+    font-size: rem;
+}

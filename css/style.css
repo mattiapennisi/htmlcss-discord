@@ -4,9 +4,9 @@
     --h-container-bg: #daa520;
     --jumbotron-bg: #00008b;
     --invite-only-bg: #fff;
-    --community-bg: #d3d3d3;
+    --community-bg: #f6f6f6;
     --fandom-bg: #fff;
-    --technology-bg: #d3d3d3;
+    --technology-bg: #f6f6f6;
     --sections-primary: #ee82ee;
     --sections-big: #1e90ff;
     --sections-small: #ffc0cb;
@@ -27,7 +27,7 @@ body {
 .debug {
 
     * {
-        /* border: 1px dotted black; */
+        border: 1px dotted black;
     }
 
     header {
@@ -150,16 +150,17 @@ body {
 /* Header */
 header {
     background-color: var(--header-bg);
-    height: ;
+    height:;
 }
 
 #h-container {
-    background-color: ;
-    height: px;
-    font-size: rem;
+    height: 30px;
+    font-size: 0.7rem;
     width: 60%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 7px;
 }
 
 #h-logo {
@@ -168,7 +169,7 @@ header {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    padding: px;
+    margin: 7px;
 }
 
 #navbar {
@@ -179,16 +180,21 @@ header {
         
         color: #fff;
         text-decoration: none;
-        margin: px;
+        margin: 3px;
     }
 }
 
 #h-login {
     width: 20%;
-    margin-left: 10px;
-    border-radius: 30px;
-    border: 0px;
+    height: 100%;
+
+    #btn-login {
+        border-radius: 30px;
+        border: 0px;
+    }
 }
+
+
 
 /* Flex center utility class */
 .flex-center {
@@ -244,8 +250,8 @@ header {
     height: px;
 
     #technology-content {
-        height: 550px;
-        background-color: var(--sections-secondary);
+        height: px;
+        background-color: ;
     }
 }
 
